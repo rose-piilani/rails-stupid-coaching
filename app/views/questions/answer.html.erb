@@ -1,0 +1,24 @@
+<div class="answer-wrapper">
+  <div class="container">
+    <div class="col-sm-4 col-sm-offset-4">
+      <blockquote>
+        <p><%= params[:query] %></p>
+        <footer>You</footer>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          <% @query = params[:query] %>
+          <% if @query == "I am going to work right now!" %>
+          <%= render plain: "Good." %>
+          <% elsif @query.include? "?" %>
+          <%= render plain: "Silly question, get dressed and go to work!" %>
+          <% else %>
+          <%= render plain: "I don't care, get dressed and go to work!" %>
+          <% end %>
+        </p>
+        <footer>Your Coach</footer>
+      </blockquote>
+    </div>
+  </div>
+</div>
