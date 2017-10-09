@@ -1,2 +1,11 @@
-<h1>Questions#ask</h1>
-<p>Find me in app/views/questions/ask.html.erb</p>
+<div class="container">
+  <div class="col-sm-4 col-sm-offset-4">
+    <h1>Speak to your coach</h1>
+    <form action="/answer" method="get">
+      <div class="form-group">
+        <input class="form-control" type="text" name="query" placeholder="What do you want to ask your coach?">
+      </div>
+      <button class="btn btn-primary" type="submit">Go on</button>
+    </form>
+  </div>
+</div>
